@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: "Rubik", "sans-serif";
+  --font-sans3: "Source Sans 3", "sans-serif";
+  --font-syne: "Syne", "sans-serif";
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --shadow-background: 0px 0px 150px 18px rgba(229, 32, 32, 1);
+  --shadow-button: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  --polygon: polygon(27% 48%, 59% 38%, 100% 48%, 81% 62%, 35% 76%, 0% 70%);
+  --shadow-center: 0px 0px 17px 0px rgba(255, 145, 66, 0.55);
+}
+
+@media only screen and (min-width: 1024px) {
+  .listNav {
+    position: relative;
+  }
+
+  .listNav::before {
+    content: "";
+    position: absolute;
+    transition: all;
+    transition-duration: 120ms;
+    bottom: -2px;
+    border-radius: 100%;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    color: white;
+  }
+
+  .listNav:hover::before {
+    width: 100%;
+  }
+}
