@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export const MyProjects = () => {
   return (
-    <div className="py-10 lg:px-26 xl:py-16">
+    <div className="py-10 lg:px-26 lg:py-32 xl:py-16">
       <h2 className="text-center">
         <span className="text-white font-syne font-bold inline-block text-2xl relative lg:text-3xl xl:text-5xl">
           My Projects
