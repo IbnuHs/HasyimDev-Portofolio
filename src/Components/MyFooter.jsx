@@ -7,11 +7,11 @@ export const MyFooter = () => {
   return (
     <footer className="bg-[#131313] text-white px-6 py-10 flex flex-col gap-8 md:px-16 lg:px-32 lg:py-8 xl:py-16 xl:px-52">
       <div className="flex justify-between items-center">
-        <h5 className="font-extrabold font-syne text-[10px] justify-self-start self-start md:text-sm lg:text-[18px] xl:text-[22px]">
+        <h5 className="font-extrabold font-syne text-[10px] justify-self-start self-start md:text-sm lg:text-[18px] xl:text-[22px] 2xl:text-[24px]">
           HASYIM<span className="text-[#F72C5B] font-extrabold">DEV</span>
         </h5>
-        <div className="flex flex-col gap-3 items-center md:gap-5">
-          <h5 className="flex items-center gap-1 text-[12px] font-semibold md:text-sm lg:text-[15px] xl:text-[20px]">
+        <div className="flex flex-col gap-3 items-center md:gap-5 2xl:gap-6">
+          <h5 className="flex items-center gap-1 text-[12px] font-semibold md:text-sm lg:text-[15px] xl:text-[20px] 2xl:text-[22px]">
             <FaLocationDot className="text-[12px]" />
             Makassar, Indonesia
           </h5>
@@ -43,7 +43,7 @@ export const MyFooter = () => {
           </ol>
         </div>
       </div>
-      <hr />
+      <hr className="2xl:mt-5" />
       <h6 className="font-semibold font-syne text-center text-sm xl:text-xl">
         &copy; Copyright 2025
       </h6>

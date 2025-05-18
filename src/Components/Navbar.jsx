@@ -17,13 +17,13 @@ export const Navbar = () => {
           show ? "h-auto py-5 pb-8" : "h-0 overflow-hidden"
         } md:bg-transparent md:static md:flex md:h-auto md:flex-row md:text-[13px] md:overflow-visible lg:text-[15px] xl:text-[16px] xl:gap-12`}>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
-          <Link>Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
-          <Link>About Me</Link>
+          <a href="#aboutme">About Me</a>
         </li>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
-          <Link>My Projects</Link>
+          <Link to="/projects">My Projects</Link>
         </li>
         <li className="text-[#FFFFFF] hover:text-white transition-all">
           <Link className="border border-[#BF3131] bg-[#222222] hover:shadow-button hover:shadow-[#BF3131] px-5 py-1 rounded-2xl md:px-4 md:py-1 xl:py-2 xl:px-6">

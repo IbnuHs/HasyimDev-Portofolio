@@ -2,10 +2,13 @@ import React from "react";
 import { CardProject } from "../../../Components/CardProject";
 import { projects } from "../../../data/projects";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router";
 
 export const MyProjects = () => {
+  const data = projects.slice(0, 4);
+  console.log(data);
   return (
-    <div className="py-10 lg:px-26 lg:py-32 xl:py-16">
+    <div className="py-10 px-2 lg:px-26 lg:py-32 xl:py-16">
       <h2 className="text-center">
         <span className="text-white font-syne font-bold inline-block text-2xl relative lg:text-3xl xl:text-5xl">
           My Projects
@@ -13,13 +16,13 @@ export const MyProjects = () => {
         </span>
       </h2>
       <div className="grid [grid-template-columns:repeat(auto-fit,minmax(0,300px))] gap-12 justify-center mt-10 place-items-center px-5 fit-2-auto md:[grid-template-columns:repeat(auto-fit,minmax(0,320px))] md:gap-8 lg:mt-20 lg:[grid-template-columns:repeat(auto-fit,minmax(0,340px))] lg:gap-16 xl:[grid-template-columns:repeat(auto-fit,minmax(0,450px))] xl:gap-28">
-        {projects.map((i, index) => (
+        {data.map((i, index) => (
           <CardProject
             key={index}
             title={i.title}
             type={i.type}
             techstack={i.techsStack}
-            urlImg={i.urlImg}
+            urlImg={i.thumbnail}
           />
         ))}
       </div>
@@ -27,13 +30,12 @@ export const MyProjects = () => {
       <div
         className="flex justify-center mt-14 lg:mt-16 xl:mt-20
       ">
-        <a
-          href=""
-          target="blank"
+        <Link
+          to="/projects"
           className="text-white cursor-pointer font-rubik flex items-center justify-center gap-2 border border-[#FF9142] px-4 py-2 rounded-2xl text-sm hover:shadow-center shadow-[#FF9142] transition-all ease-in-out duration-150 lg:px-5 lg:text-[16px] xl:text-lg xl:px-6 xl-py-3">
           <h5>Explore More</h5>
           <FaArrowRightLong className="text-shadow-white" />
-        </a>
+        </Link>
       </div>
     </div>
   );

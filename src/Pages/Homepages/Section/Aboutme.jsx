@@ -3,7 +3,9 @@ import backquote from "../../../assets/backtip.svg";
 
 export const Aboutme = () => {
   return (
-    <div className="px-8 text-white py-10 relative md:px-14 md:py-28 lg:py-36 lg:px-32 xl:px-52 xl:py-44 2xl:py-52">
+    <section
+      id="aboutme"
+      className="px-8 text-white py-30 relative md:px-14 md:py-28 lg:py-36 lg:px-32 xl:px-52 xl:py-44 2xl:py-52">
       <h2 className="font-syne text-2xl font-bold md:text-3xl lg:text-5xl">
         About Me
       </h2>
@@ -24,9 +26,9 @@ export const Aboutme = () => {
       <img
         src={backquote}
         alt=""
-        className="font-extrabold absolute top-3 right-5 w-[80px] md:right-8 md:top-16 md:w-[100px] lg:right-25 lg:w-[150px] xl:w-[180px] xl:right-32 2xl:top-32"
+        className="font-extrabold absolute top-20 right-5 w-[80px] md:right-8 md:top-16 md:w-[100px] lg:right-25 lg:w-[150px] xl:w-[180px] xl:right-32 2xl:top-32"
       />
-      <div className="h-[40px] w-[120px] absolute left-0 top-[50%] rounded-[100%] shadow-[#e0e0e0] shadow-background bg-[#f1f1f18a] blur-2xl -z-10  md:w-[120px] lg:-left-20 lg:w-[150px]"></div>
-    </div>
+      <div className="h-[40px] w-[120px] absolute left-0 top-[50%] rounded-[100%] shadow-[#e0e0e0] shadow-background bg-[#f1f1f18a] blur-2xl -z-10  md:w-[120px] lg:-left-20 lg:w-[150px] 2xl:-left-10 2xl:w-[400px] 2xl:h-[60px] 2xl:top-[56%]"></div>
+    </section>
   );
 };
