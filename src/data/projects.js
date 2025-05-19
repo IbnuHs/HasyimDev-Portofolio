@@ -2,6 +2,9 @@ import blogblok1 from "/src/data/images/blogblok/blogblok.png";
 import blogblok2 from "/src/data/images/blogblok/blogblok2.png";
 import blogblok3 from "/src/data/images/blogblok/blogblok3.png";
 import blogblok4 from "/src/data/images/blogblok/blogblok4.png";
+import blogblok5 from "/src/data/images/blogblok/blogblok5.png";
+import blogblok6 from "/src/data/images/blogblok/blogblok6.png";
+import blogblok7 from "/src/data/images/blogblok/blogblok7.png";
 import thumbnailblogblok from "/src/data/images/blogblok/ThumbnailBlogBlok.png";
 
 // Lost and found
@@ -48,13 +51,23 @@ export const projects = [
     ],
     thumbnail: thumbnailLF,
     alert: "",
+    detail: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus facere fugit rem error molestiae eveniet! Accusamus eos aspernatur, vel, sit labore laborum facilis accusantium nostrum ab, placeat perspiciatis expedita.
+      Voluptatum eos voluptatem ad nobis nihil hic blanditiis earum aliquid atque ea fuga, odio in dicta vel aspernatur exercitationem sed et minus, rem velit dolorum reprehenderit pariatur molestias dignissimos! Deserunt.`,
   },
   {
     id: 2,
     title: "BlogBlok",
     type: "Front-End",
     techsStack: "ReactJs, TailwindCss",
-    urlImg: [blogblok1, blogblok2, blogblok3, blogblok4],
+    urlImg: [
+      blogblok1,
+      blogblok2,
+      blogblok3,
+      blogblok4,
+      blogblok5,
+      blogblok6,
+      blogblok7,
+    ],
     thumbnail: thumbnailblogblok,
     url: "",
   },

@@ -1,11 +1,43 @@
 import React from "react";
 import { projects } from "../../data/projects";
 import { useParams } from "react-router";
-
 export const DetailProject = () => {
   const { id } = useParams();
   const project = projects.find(i => id === id);
   console.log(project.thumbnail);
   console.log(id);
-  return <section className="min-h-[60vh]">DetailProject</section>;
+  return (
+    <section className="min-h-[60vh] px-5 py-12">
+      <div className="rounded-sm overflow-hidden">
+        <img
+          src={project.thumbnail}
+          alt={`thumbnail of ${project.title}`}
+          className="w-full"
+        />
+      </div>
+      <div className="mt-5">
+        <h4 className="font-syne text-white font-bold text-2xl">
+          {project.title}
+        </h4>
+        <table className="font-rubik text-sm">
+          <tr>
+            <td className="text-[#606060]">Type</td>
+            <td className="text-white">{project.type}</td>
+          </tr>
+          <tr>
+            <td className="text-[#606060] flex">Tech Stack</td>
+            <td className="text-white">{project.techsStack}</td>
+          </tr>
+          <tr>
+            <td className="text-[#606060] text-nowrap">About Project</td>
+          </tr>
+          <tr>
+            <td className="text-white pt-3" colSpan={2}>
+              {project.detail}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  );
 };
