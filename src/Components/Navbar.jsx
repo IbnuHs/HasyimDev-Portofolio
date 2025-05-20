@@ -7,7 +7,7 @@ export const Navbar = () => {
     setShow(!show);
   };
   return (
-    <nav className="py-3 px-6 z-10 flex flex-row justify-between md:py-4 box-border lg:px-20 xl:px-28">
+    <nav className="py-3 px-6 z-auto flex flex-row justify-between md:py-4 box-border lg:px-20 xl:px-28">
       <h1 className="font-bold font-syne text-white lg:text-[18px] px-0 mx-0 xl:text-[24px]">
         HASYIM
         <span className="font-extrabold px-0 mx-0 text-[#F72C5B]">DEV</span>

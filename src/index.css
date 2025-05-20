@@ -1,0 +1,9 @@
+/* .slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+} */
+
+.slick-prev {
+  transform: translate(100%, 0);
+}

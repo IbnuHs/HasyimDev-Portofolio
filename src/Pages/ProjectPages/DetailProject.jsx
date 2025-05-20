@@ -1,20 +1,17 @@
 import React from "react";
 import { projects } from "../../data/projects";
 import { useParams } from "react-router";
+import { Carousel } from "./Carousel";
 export const DetailProject = () => {
   const { id } = useParams();
   const project = projects.find(i => id === id);
   console.log(project.thumbnail);
   console.log(id);
+
   return (
-    <section className="min-h-[60vh] px-5 py-12">
-      <div className="rounded-sm overflow-hidden">
-        <img
-          src={project.thumbnail}
-          alt={`thumbnail of ${project.title}`}
-          className="w-full"
-        />
-      </div>
+    <section className="min-h-[60vh] px-5 py-5 relative -z-10">
+      <Carousel project={project} />
+
       <div className="mt-5">
         <h4 className="font-syne text-white font-bold text-2xl">
           {project.title}
