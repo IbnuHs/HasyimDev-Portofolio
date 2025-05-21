@@ -1,26 +1,46 @@
 import React from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
-import { Scrollbar, Pagination, Navigation, A11y } from "swiper/modules";
+import "swiper/swiper-bundle.css";
+import {
+  Scrollbar,
+  Pagination,
+  Navigation,
+  A11y,
+  EffectCreative,
+} from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export const Carousel = ({ project }) => {
-  console.log(project);
+  // console.log(project);
 
   return (
     <Swiper
       navigation
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      pagination={{ clickable: true }}
-      spaceBetween={50}>
+      lazyPreloadPrevNext={true}
+      // pagination={{ clickable: true }}
+      effect={"creative"}
+      creativeEffect={{
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      }}
+      modules={[Navigation, Pagination, Scrollbar, A11y, EffectCreative]}
+      spaceBetween={30}>
       {project.urlImg.map(i => {
         return (
           <SwiperSlide>
             <div className="flex items-center justify-center h-full aspect-square">
               <img
                 src={i}
-                alt=""
-                className="object-center h-full object-contain"
+                alt={`picture of ${project.title}`}
+                loading="lazy"
+                className="object-center h-full object-contain xl:object-top"
               />
             </div>
           </SwiperSlide>

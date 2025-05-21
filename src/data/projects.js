@@ -50,9 +50,11 @@ export const projects = [
       lostandfounf8,
     ],
     thumbnail: thumbnailLF,
-    alert: "",
+    alert:
+      "The backend service is currently unavailable. The application is running in frontend-only mode. Some features may not work properly until the backend is restored.",
     detail: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus facere fugit rem error molestiae eveniet! Accusamus eos aspernatur, vel, sit labore laborum facilis accusantium nostrum ab, placeat perspiciatis expedita.
       Voluptatum eos voluptatem ad nobis nihil hic blanditiis earum aliquid atque ea fuga, odio in dicta vel aspernatur exercitationem sed et minus, rem velit dolorum reprehenderit pariatur molestias dignissimos! Deserunt.`,
+    url: "https://lost-and-found.pages.dev/",
   },
   {
     id: 2,
@@ -68,8 +70,11 @@ export const projects = [
       blogblok6,
       blogblok7,
     ],
+    alert: "",
+    detail: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus facere fugit rem error molestiae eveniet! Accusamus eos aspernatur, vel, sit labore laborum facilis accusantium nostrum ab, placeat perspiciatis expedita.
+      Voluptatum eos voluptatem ad nobis nihil hic blanditiis earum aliquid atque ea fuga, odio in dicta vel aspernatur exercitationem sed et minus, rem velit dolorum reprehenderit pariatur molestias dignissimos! Deserunt.`,
     thumbnail: thumbnailblogblok,
-    url: "",
+    url: "https://blogblok.pages.dev/",
   },
 
   {
