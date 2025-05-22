@@ -20,7 +20,7 @@ export const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
-          <a href="#aboutme">About Me</a>
+          <Link to="/aboutme">About Me</Link>
         </li>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
           <Link to="/projects">My Projects</Link>

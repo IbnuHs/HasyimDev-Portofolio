@@ -19,28 +19,28 @@ export const Carousel = ({ project }) => {
       navigation
       lazyPreloadPrevNext={true}
       // pagination={{ clickable: true }}
-      effect={"creative"}
-      creativeEffect={{
-        prev: {
-          shadow: true,
-          translate: ["-120%", 0, -500],
-        },
-        next: {
-          shadow: true,
-          translate: ["120%", 0, -500],
-        },
-      }}
+      // effect={"creative"}
+      // creativeEffect={{
+      //   prev: {
+      //     shadow: true,
+      //     translate: ["-120%", 0, -500],
+      //   },
+      //   next: {
+      //     shadow: true,
+      //     translate: ["120%", 0, -500],
+      //   },
+      // }}
       modules={[Navigation, Pagination, Scrollbar, A11y, EffectCreative]}
       spaceBetween={30}>
       {project.urlImg.map(i => {
         return (
           <SwiperSlide>
-            <div className="flex items-center justify-center h-full aspect-square">
+            <div className="flex items-center justify-center h-full">
               <img
                 src={i}
                 alt={`picture of ${project.title}`}
                 loading="lazy"
-                className="object-center h-full object-contain xl:object-top"
+                className="object-center h-full object-contain aspect-[4/3]"
               />
             </div>
           </SwiperSlide>

@@ -1,11 +1,11 @@
 import React from "react";
 import backquote from "../../../assets/backtip.svg";
 
-export const Aboutme = () => {
+export const AboutSection = () => {
   return (
     <section
       id="aboutme"
-      className="px-8 text-white py-30 relative md:px-14 md:py-28 lg:py-36 lg:px-32 xl:px-52 xl:py-44 2xl:py-52">
+      className="px-8 text-white py-30 relative md:px-14 md:py-28 lg:py-36 lg:px-32 xl:px-52 xl:py-44 2xl:py-48">
       <h2 className="font-syne text-2xl font-bold md:text-3xl lg:text-5xl">
         About Me
       </h2>

@@ -2,7 +2,7 @@ import React from "react";
 import { MyProfile } from "./Section/MyProfile";
 import { MySkill } from "./Section/MySkill";
 import { MyProjects } from "./Section/MyProjects";
-import { Aboutme } from "./Section/Aboutme";
+import { AboutSection } from "./Section/AboutSection";
 
 export const HomePages = () => {
   return (
@@ -10,7 +10,7 @@ export const HomePages = () => {
       <MyProfile />
       <MySkill />
       <MyProjects />
-      <Aboutme />
+      <AboutSection />
     </div>
   );
 };

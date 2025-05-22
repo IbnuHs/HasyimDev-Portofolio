@@ -15,7 +15,7 @@ export const MyProjects = () => {
           <div className="h-[20px] w-[80px] absolute -right-10 rounded-[100%] shadow-[#e0e0e0] shadow-background bg-[#f1f1f18a] blur-2xl -z-10 md:-right-20 md:w-[120px]"></div>
         </span>
       </h2>
-      <div className="grid [grid-template-columns:repeat(auto-fit,minmax(0,300px))] gap-12 justify-center mt-10 place-items-center px-5 fit-2-auto md:[grid-template-columns:repeat(auto-fit,minmax(0,320px))] md:gap-8 lg:mt-20 lg:[grid-template-columns:repeat(auto-fit,minmax(0,340px))] lg:gap-16 xl:[grid-template-columns:repeat(auto-fit,minmax(0,450px))] xl:gap-28">
+      <div className="grid [grid-template-columns:repeat(auto-fit,minmax(0,300px))] gap-12 justify-center mt-10 place-items-center px-5 fit-2-auto md:[grid-template-columns:repeat(auto-fit,minmax(0,320px))] md:gap-8 lg:mt-20 lg:[grid-template-columns:repeat(auto-fit,minmax(0,340px))] lg:gap-16 xl:[grid-template-columns:repeat(auto-fit,minmax(0,450px))] xl:mt-24 xl:gap-28">
         {data.map((i, index) => (
           <CardProject
             key={index}
