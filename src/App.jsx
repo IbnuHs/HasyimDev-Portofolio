@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router";
 import { MyFooter } from "./Components/MyFooter";
 import { ProjectsPage } from "./Pages/ProjectPages/ProjectsPage";
 import { DetailProject } from "./Pages/ProjectPages/DetailProject";
-import { AboutSection } from "./Pages/Homepages/Section/AboutSection";
+import { AboutMe } from "./Pages/AboutMePages.jsx/AboutMe";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<HomePages />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects/:id" element={<DetailProject />} />
-          <Route path="/aboutme" element={<AboutSection />} />
+          <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
         <MyFooter />
       </div>

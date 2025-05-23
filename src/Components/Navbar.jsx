@@ -13,7 +13,7 @@ export const Navbar = () => {
         <span className="font-extrabold px-0 mx-0 text-[#F72C5B]">DEV</span>
       </h1>
       <ol
-        className={`absolute top-13 text-[14px] left-0 right-0 flex flex-col justify-center items-center gap-4 font-semibold ease-in-out transition-all duration-75 font-rubik bg-[#1A1A1A] backdrop-filter backdrop-blur-lg  ${
+        className={`absolute top-13 text-[14px] left-0 z-20 right-0 flex flex-col justify-center items-center gap-4 font-semibold ease-in-out transition-all duration-75 font-rubik bg-[#1A1A1A] backdrop-filter backdrop-blur-lg  ${
           show ? "h-auto py-5 pb-8" : "h-0 overflow-hidden"
         } md:bg-transparent md:static md:flex md:h-auto md:flex-row md:text-[13px] md:overflow-visible lg:text-[15px] xl:text-[16px] xl:gap-12`}>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
