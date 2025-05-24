@@ -20,6 +20,7 @@ function App() {
           <Route path="/projects/:id" element={<DetailProject />} />
           <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
+        <main></main>
         <MyFooter />
       </div>
     </div>

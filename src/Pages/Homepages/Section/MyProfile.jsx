@@ -1,9 +1,9 @@
 import React from "react";
-import mypict from "../../../assets/me1.png";
+import mypict from "../../../assets/me.png";
 
 export const MyProfile = () => {
   return (
-    <section className="mt-[16px] px-10 flex flex-col gap-4 md:flex-row-reverse md:items-center md:px-14 md:min-h-[45vh] md:gap-12 lg:justify-between lg:min-h-[55vh] lg:px-28 xl:min-h-[75vh] xl:px-36 xl:gap-28 2xl:px-40">
+    <section className="mt-[16px] px-10 flex flex-col gap-4 md:flex-row-reverse md:items-center md:px-14 md:min-h-[45vh] md:gap-12 lg:justify-between lg:min-h-[55vh] lg:px-28 xl:min-h-[82vh] xl:px-36 xl:gap-28 2xl:px-40">
       <img
         src={mypict}
         alt="Ibnu Hasyim Picture"

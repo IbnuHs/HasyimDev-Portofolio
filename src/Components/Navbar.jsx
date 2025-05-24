@@ -20,10 +20,10 @@ export const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
-          <Link to="/aboutme">About Me</Link>
+          <Link to="/projects">My Projects</Link>
         </li>
         <li className="listNav text-[#ffffff91] hover:text-white transition-all">
-          <Link to="/projects">My Projects</Link>
+          <Link to="/aboutme">About Me</Link>
         </li>
         <li className="text-[#FFFFFF] hover:text-white transition-all">
           <Link className="border border-[#BF3131] bg-[#222222] hover:shadow-button hover:shadow-[#BF3131] px-5 py-1 rounded-2xl md:px-4 md:py-1 xl:py-2 xl:px-6">
