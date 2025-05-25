@@ -1,11 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 import { IoMenu } from "react-icons/io5";
 export const Navbar = () => {
   const [show, setShow] = useState(false);
+  const menuref = useRef();
   const onShow = () => {
     setShow(!show);
   };
+  useEffect(() => {
+    const handleClickOutside = e => {
+      if (show && menuref.current && !menuref.current.contains(e.target)) {
+        setShow(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [show]);
   return (
     <nav className="py-3 px-6 z-auto flex flex-row justify-between md:py-4 box-border lg:px-20 xl:px-28">
       <h1 className="font-bold font-syne text-white lg:text-[18px] px-0 mx-0 xl:text-[24px]">
@@ -13,6 +25,7 @@ export const Navbar = () => {
         <span className="font-extrabold px-0 mx-0 text-[#F72C5B]">DEV</span>
       </h1>
       <ol
+        ref={menuref}
         className={`absolute top-13 text-[14px] left-0 z-20 right-0 flex flex-col justify-center items-center gap-4 font-semibold ease-in-out transition-all duration-75 font-rubik bg-[#1A1A1A] backdrop-filter backdrop-blur-lg  ${
           show ? "h-auto py-5 pb-8" : "h-0 overflow-hidden"
         } md:bg-transparent md:static md:flex md:h-auto md:flex-row md:text-[13px] md:overflow-visible lg:text-[15px] xl:text-[16px] xl:gap-12`}>
@@ -26,9 +39,12 @@ export const Navbar = () => {
           <Link to="/aboutme">About Me</Link>
         </li>
         <li className="text-[#FFFFFF] hover:text-white transition-all">
-          <Link className="border border-[#BF3131] bg-[#222222] hover:shadow-button hover:shadow-[#BF3131] px-5 py-1 rounded-2xl md:px-4 md:py-1 xl:py-2 xl:px-6">
+          <button
+            type="button"
+            onClick={() => document.getElementById("my_modal_2").showModal()}
+            className="border border-[#BF3131] cursor-pointer bg-[#222222] hover:shadow-button hover:shadow-[#BF3131] px-5 py-1 rounded-2xl md:px-4 md:py-1 xl:py-2 xl:px-6">
             Contacts
-          </Link>
+          </button>
         </li>
       </ol>
       <button type="button" onClick={onShow} className="md:hidden">

@@ -3,10 +3,12 @@ import { Link } from "react-router";
 import projectspict from "../assets/projectbasepict.svg";
 
 export const CardProject = props => {
-  console.log(props);
   return (
     <article className="flex w-full flex-col overflow-hidden text-white">
-      <div className="aspect-[1/3] w-full max-h-[350px] overflow-hidden rounded-md lg:max-h-[420px] xl:max-h-[500px]">
+      <div
+        className={`aspect-[1/3] w-full max-h-[350px] overflow-hidden rounded-md lg:max-h-[420px] xl:max-h-[500px] ${
+          props.urlImg ? "bb-none" : "bg-gray-400"
+        } `}>
         <img
           src={props.urlImg || projectspict}
           alt={`image of ${props.title}`}

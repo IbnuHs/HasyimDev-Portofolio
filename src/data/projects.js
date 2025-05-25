@@ -1,7 +1,6 @@
 import blogblok1 from "/src/data/images/blogblok/blogblok.png";
 import blogblok2 from "/src/data/images/blogblok/blogblok2.png";
 import blogblok3 from "/src/data/images/blogblok/blogblok3.png";
-import blogblok4 from "/src/data/images/blogblok/blogblok4.png";
 import blogblok5 from "/src/data/images/blogblok/blogblok5.png";
 import blogblok6 from "/src/data/images/blogblok/blogblok6.png";
 import blogblok7 from "/src/data/images/blogblok/blogblok7.png";
@@ -25,6 +24,7 @@ import newsApps3 from "/src/data/images/News Apps/News Apps3.png";
 import newsApps4 from "/src/data/images/News Apps/News Apps4.png";
 import newsApps5 from "/src/data/images/News Apps/News Apps5.png";
 import newsApps6 from "/src/data/images/News Apps/News Apps6.png";
+import newsApps7 from "/src/data/images/News Apps/News Apps7.png";
 
 // Tracking Logistic
 import thumbnailTrackinglogistic from "/src/data/images/tracking logistic/kallatranslog_logo.jpeg";
@@ -43,7 +43,6 @@ export const projects = [
       lostandfounf2,
       lostandfounf3,
       lostandfounf4,
-      lostandfounf4,
       lostandfounf5,
       lostandfounf6,
       lostandfounf7,
@@ -61,18 +60,10 @@ export const projects = [
     title: "BlogBlok",
     type: "Front-End",
     techsStack: "ReactJs, TailwindCss",
-    urlImg: [
-      blogblok1,
-      blogblok2,
-      blogblok3,
-      blogblok4,
-      blogblok5,
-      blogblok6,
-      blogblok7,
-    ],
-    alert: "",
-    detail: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus facere fugit rem error molestiae eveniet! Accusamus eos aspernatur, vel, sit labore laborum facilis accusantium nostrum ab, placeat perspiciatis expedita.
-      Voluptatum eos voluptatem ad nobis nihil hic blanditiis earum aliquid atque ea fuga, odio in dicta vel aspernatur exercitationem sed et minus, rem velit dolorum reprehenderit pariatur molestias dignissimos! Deserunt.`,
+    urlImg: [blogblok1, blogblok3, blogblok5, blogblok6, blogblok7, blogblok2],
+    alert:
+      "This application is currently under development. At this stage, only several frontend pages are available, and some features may be limited. The backend (API) is still in progress and will be integrated in future updates to support full functionality.",
+    detail: `BlogBlok is a web application that allows users to write and share personal stories or daily life experiences in the form of blogs or news posts. Users can create their own content, interact with others through likes, and explore posts from a diverse range of writers. With a responsive design and clean user interface, BlogBlok encourages self-expression and fosters an active community. The application is built using React.js and Tailwind CSS, providing a fast, lightweight, and modern user experience.`,
     thumbnail: thumbnailblogblok,
     url: "https://blogblok.pages.dev/",
   },
@@ -82,11 +73,13 @@ export const projects = [
     title: "News Apps",
     type: "Front-End",
     techsStack: "ReactJs, TailwindCss",
-    urlImg: [newsApps2, newsApps3, newsApps4, newsApps5, newsApps6],
+    urlImg: [newsApps2, newsApps3, newsApps4, newsApps5, newsApps6, newsApps7],
     thumbnail: newsAppsThumbnail,
     alert:
-      "The Project Not Deployed because the API is not free for Production",
+      "The Project Not Deployed because the API is not free for Production, if you ask Why??  because im a poor developer hahahahaha....",
     url: "",
+    detail:
+      "This news application is a platform that delivers the latest and most relevant headlines from around the world by integrating data from the News API. It provides users with real-time updates across various categories such as technology, business, health, and entertainment. The application is designed with a clean and responsive user interface, allowing users to easily browse and read articles from multiple trusted news sources. Each article includes essential details like the title, source, publication date, and a brief summary, with a link to read the full story. This project not only demonstrates how to consume external APIs but also showcases modern frontend development practices using React and TailwindCSS, offering a fast, intuitive, and informative user experience.",
   },
   {
     id: 4,
@@ -95,6 +88,7 @@ export const projects = [
     techsStack: "NestJs, MySQL, NodeMailer",
     urlImg: [tracklog, tracklog1, tracklog2],
     thumbnail: thumbnailTrackinglogistic,
+    detail: `This project is a freight tracking system developed for Kalla Translog expeditions. The system allows users to track the status and location of the goods they send through the Kalla Translog service in real-time. This project was developed during the Merdeka Campus Internship program at Kalla Group. In this project, I was responsible as a backend developer who focused on creating and developing a RESTful API to support the needs of the frontend team. The API I built was tasked with providing shipment tracking data, including information on shipment status and last location.`,
   },
   {
     id: 5,

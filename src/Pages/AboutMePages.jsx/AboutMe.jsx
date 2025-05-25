@@ -3,10 +3,11 @@ import { AboutSection } from "./About";
 import me from "../../../src/assets/me1.png";
 import { CardExperience } from "./CardExperience";
 import { experience } from "../../data/experience";
+import { Modal } from "../../Components/Modal";
 
 export const AboutMe = () => {
   return (
-    <section className="min-h-[90vh] -z-10 px-12 mt-10 mb-20 lg:mt-20 xl:px-36 relative xl:mb-28 2xl:mb-32">
+    <section className="min-h-[90vh]  px-12 mt-10 mb-20 lg:mt-20 xl:px-36 relative xl:mb-28 2xl:mb-32">
       <div className="flex flex-col gap-10 relative md:grid md:grid-cols-2 lg:items-center xl:gap-14">
         <div className="h-[50px] w-[150px] absolute -left-10 rounded-[100%] shadow-[#E52020] shadow-background bg-[#e520208a] blur-2xl top-[40%] z-10 md:h-[30px] md:w-[120px] md:-left-0  md:rounded-none lg:w-[500px] lg:-left-[280px] "></div>
         <img src={me} alt="" className="w-full" />

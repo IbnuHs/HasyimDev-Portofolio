@@ -9,7 +9,7 @@ import {
   A11y,
   EffectCreative,
 } from "swiper/modules";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import thumbnailtemplate from "../../assets/projectbasepict.svg";
 
 export const Carousel = ({ project }) => {
   // console.log(project);
@@ -18,34 +18,33 @@ export const Carousel = ({ project }) => {
     <Swiper
       navigation
       lazyPreloadPrevNext={true}
-      // pagination={{ clickable: true }}
-      // effect={"creative"}
-      // creativeEffect={{
-      //   prev: {
-      //     shadow: true,
-      //     translate: ["-120%", 0, -500],
-      //   },
-      //   next: {
-      //     shadow: true,
-      //     translate: ["120%", 0, -500],
-      //   },
-      // }}
       modules={[Navigation, Pagination, Scrollbar, A11y, EffectCreative]}
       spaceBetween={30}>
-      {project.urlImg.map(i => {
-        return (
-          <SwiperSlide>
+      {project.urlImg ? (
+        project.urlImg.map((imgUrl, index) => (
+          <SwiperSlide key={index}>
             <div className="flex items-center justify-center h-full">
               <img
-                src={i}
+                src={imgUrl}
                 alt={`picture of ${project.title}`}
                 loading="lazy"
                 className="object-center h-full object-contain aspect-[4/3]"
               />
             </div>
           </SwiperSlide>
-        );
-      })}
+        ))
+      ) : (
+        <SwiperSlide>
+          <div className="flex items-center justify-center h-full bg-gray-300 rounded-md">
+            <img
+              src={thumbnailtemplate}
+              alt={`default picture for ${project.title}`}
+              loading="lazy"
+              className="object-center h-full object-contain aspect-[4/3]"
+            />
+          </div>
+        </SwiperSlide>
+      )}
     </Swiper>
   );
 };

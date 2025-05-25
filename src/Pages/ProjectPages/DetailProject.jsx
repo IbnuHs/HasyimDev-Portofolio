@@ -7,7 +7,7 @@ export const DetailProject = () => {
   const { id } = useParams();
   const project = projects.find(i => i.id === Number(id));
   return (
-    <section className="min-h-[60vh] px-8 py-5 relative md:px-28 -z-10 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-14 xl:flex-col xl:px-18 xl:gap-x-12 xl:py-20 2xl:px-24 2xl:gap-20">
+    <section className="min-h-[60vh] px-8 py-5 relative md:px-28  lg:grid lg:grid-cols-2 lg:gap-16 lg:px-14 xl:flex-col xl:px-18 xl:gap-x-12 xl:py-20 2xl:px-24 2xl:gap-20">
       <div className="w-full lg:mt-10">
         <Carousel project={project} />
       </div>
@@ -40,7 +40,7 @@ export const DetailProject = () => {
             <a
               href={project.url}
               target="_blank"
-              className={`border-[#FFEA00] text-white font-rubik px-4 py-1 border-2 text-[12px]  rounded-lg flex gap-2 items-center justify-center cursor-pointer xl:text-[16px] xl:px-6`}>
+              className={`border-[#FFEA00] text-white font-rubik px-4 py-1 border-2 text-[12px] hover:shadow-button hover:shadow-[#FFEA00] transition-all duration-150 rounded-lg flex gap-2 items-center justify-center cursor-pointer xl:text-[16px] xl:px-6`}>
               VISIT <FaArrowUpRightFromSquare />
             </a>
           ) : (
@@ -51,10 +51,14 @@ export const DetailProject = () => {
             </button>
           )}
         </div>
-        <div className="text-[#F86363] font-rubik mt-10 md:mt-5 md:max-w-[80%]">
-          <h6 className="font-semibold xl:text-lg">Attention!!!</h6>
-          <p className="mt-3 text-[14px] xl:text-lg">{project.alert}</p>
-        </div>
+        {project.alert ? (
+          <div className="text-[#F86363] font-rubik mt-10 md:mt-5 md:max-w-[80%]">
+            <h6 className="font-semibold xl:text-lg">Attention!!!</h6>
+            <p className="mt-3 text-[14px] xl:text-lg">{project.alert}</p>
+          </div>
+        ) : (
+          ""
+        )}
         {/* <div className="md:grid md:grid-cols-2 md:gap-8"></div> */}
       </div>
       {/* <div className="mt-10 md:max-w-[60%] mb-10 md:mt-0 md:col-span-2 lg:col-start-2 lg:mt-5 xl:max-w-[80%] xl:mt-14">
