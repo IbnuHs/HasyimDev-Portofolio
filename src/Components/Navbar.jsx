@@ -1,11 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
-import { IoMenu } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
 export const Navbar = () => {
   const [show, setShow] = useState(false);
   const menuref = useRef();
   const onShow = () => {
-    setShow(!show);
+    setShow(true);
+    console.log(show);
+  };
+  const onClose = () => {
+    setShow(false);
+    console.log(show);
   };
   useEffect(() => {
     const handleClickOutside = e => {
@@ -47,9 +52,20 @@ export const Navbar = () => {
           </button>
         </li>
       </ol>
-      <button type="button" onClick={onShow} className="md:hidden">
-        <IoMenu className="text-white text-[24px]" />
-      </button>
+      <div className="md:hidden">
+        <button
+          type="button"
+          onClick={onShow}
+          className={`${show ? "hidden" : "inline-block"}`}>
+          <IoMenu className="text-white text-[24px]" />
+        </button>
+        <button
+          type="button"
+          onClick={onClose}
+          className={`${show ? "inline-block" : "hidden"}`}>
+          <IoClose className="text-white text-[24px]" />
+        </button>
+      </div>
     </nav>
   );
 };

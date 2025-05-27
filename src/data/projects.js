@@ -32,6 +32,20 @@ import tracklog from "/src/data/images/tracking logistic/tracklog.png";
 import tracklog1 from "/src/data/images/tracking logistic/tracklog1.png";
 import tracklog2 from "/src/data/images/tracking logistic/tracklog2.png";
 
+// Music apps
+import thumbnailmusicapps from "/src/data/images/music-apps/music-apps thumbnail.png";
+import musicapps1 from "/src/data/images/music-apps/music-apps1.png";
+import musicapps2 from "/src/data/images/music-apps/music-Apps2.png";
+import musicapps3 from "/src/data/images/music-apps/music-apps3.png";
+
+// Customer profiling
+import customerprofiling1 from "/src/data/images/customer profiling/customer-profiling (1).png";
+import customerprofiling2 from "/src/data/images/customer profiling/customer-profiling (2).png";
+import customerprofiling3 from "/src/data/images/customer profiling/customer-profiling (3).png";
+import customerprofiling4 from "/src/data/images/customer profiling/customer-profiling (4).png";
+import customerprofiling5 from "/src/data/images/customer profiling/customer-profiling (5).png";
+import customerprofiling6 from "/src/data/images/customer profiling/customer-profiling (6).png";
+
 export const projects = [
   {
     id: 1,
@@ -95,14 +109,24 @@ export const projects = [
     title: "Dashboard Customer Profiling",
     type: "Data Visualitation",
     techsStack: "KNIME, Power BI",
-    thumbnail: "",
+    urlImg: [
+      customerprofiling1,
+      customerprofiling2,
+      customerprofiling3,
+      customerprofiling4,
+      customerprofiling5,
+      customerprofiling6,
+    ],
+    thumbnail: customerprofiling3,
     url: "",
+    detail: `This project involves the development of an interactive dashboard showcasing sales data of Honda motorcycles in the Papua region over several years. The raw data was first processed using KNIME for cleaning, transformation, and aggregation. Afterward, the processed data was visualized using Power BI. The dashboard is designed to provide strategic insights into sales trends, regional performance, and growth patterns over time, supporting better and more informed business decision-making.`,
   },
   {
     id: 6,
     title: "Dashboard Customer Honda Care",
     type: "Data Visualitation",
     techsStack: "KNIME, Power BI",
+    urlImg: "",
     thumbnail: "",
     url: "",
   },
@@ -111,6 +135,7 @@ export const projects = [
     title: "Automatic Spreadsheet Filling Tool - Dealer Sales Data",
     type: "Data Visualitation",
     techsStack: "Google App Script, Mailer, Spreadsheet",
+    urlImg: "",
     thumbnail: "",
     url: "",
   },
@@ -119,7 +144,22 @@ export const projects = [
     title: "Automatic Spreadsheet Filling Tools - KPB Service Data",
     type: "Data Visualitation",
     techsStack: "Google App Script, Mailer, Spreadsheet",
+    urlImg: "",
     thumbnail: "",
     url: "",
+  },
+
+  {
+    id: 9,
+    title: "Music Apps",
+    type: "Desktop Apps",
+    techsStack: "Electron.js, Html, Css, Javascript (Vanilla)",
+    urlImg: [musicapps1, musicapps2, musicapps3],
+    thumbnail: thumbnailmusicapps,
+    alert:
+      "This application is currently not publicly available as I am in the process of determining the most efficient hosting and storage solution for distribution. Once deployment infrastructure is finalized, a download link or demo will be provided.",
+    url: "",
+    detail:
+      "A modern music player application based on Electron.js that allows users to read, play and manage local music files from the application directory. Designed with a simple yet interactive interface, the app utilizes HTML, CSS and JavaScript on the frontend and Node.js on the backend through the Electron architecture.",
   },
 ];

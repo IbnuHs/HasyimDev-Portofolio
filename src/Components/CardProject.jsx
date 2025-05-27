@@ -14,6 +14,10 @@ export const CardProject = props => {
           alt={`image of ${props.title}`}
           className={`w-full h-full ${
             props.urlImg ? "object-cover" : "objec-fill border rounded-xl"
+          } ${
+            props.type === "Data Visualitation" && props.urlImg
+              ? "object-scale-down bg-gray-400"
+              : "object-contain"
           }`}
         />
       </div>

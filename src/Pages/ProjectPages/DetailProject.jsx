@@ -7,7 +7,7 @@ export const DetailProject = () => {
   const { id } = useParams();
   const project = projects.find(i => i.id === Number(id));
   return (
-    <section className="min-h-[60vh] px-8 py-5 relative md:px-28  lg:grid lg:grid-cols-2 lg:gap-16 lg:px-14 xl:flex-col xl:px-18 xl:gap-x-12 xl:py-20 2xl:px-24 2xl:gap-20">
+    <section className="min-h-[60vh] px-8 py-12 pb-20 relative md:px-28  lg:grid lg:grid-cols-2 lg:gap-16 lg:px-14 xl:flex-col xl:px-18 xl:gap-x-12 xl:py-20 2xl:px-24 2xl:gap-20">
       <div className="w-full lg:mt-10">
         <Carousel project={project} />
       </div>
@@ -35,7 +35,10 @@ export const DetailProject = () => {
             </td>
           </tr>
         </table>
-        <div className="flex mt-8">
+        <div
+          className={` mt-8 mb-10 ${
+            project.type === "Data Visualitation" ? "hidden" : "flex"
+          }`}>
           {project.url ? (
             <a
               href={project.url}
