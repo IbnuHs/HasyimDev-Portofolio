@@ -16,28 +16,30 @@ export const DetailProject = () => {
           {project.title}
         </h4>
         <table className="font-rubik text-sm xl:text-lg lg:mt-2">
-          <tr>
-            <td className="text-[#606060]">Type</td>
-            <td className="text-white">{project.type}</td>
-          </tr>
-          <tr>
-            <td className="text-[#606060] flex">Tech Stack</td>
-            <td className="text-white">{project.techsStack}</td>
-          </tr>
-          <tr>
-            <td className="text-[#606060] text-nowrap">About Project</td>
-          </tr>
-          <tr>
-            <td
-              className="text-white pt-3 md:text-[13px] lg:text-sm xl:text-lg"
-              colSpan={2}>
-              {project.detail}
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="text-[#606060]">Type</td>
+              <td className="text-white">{project.type}</td>
+            </tr>
+            <tr>
+              <td className="text-[#606060] flex">Tech Stack</td>
+              <td className="text-white">{project.techsStack}</td>
+            </tr>
+            <tr>
+              <td className="text-[#606060] text-nowrap">About Project</td>
+            </tr>
+            <tr>
+              <td
+                className="text-white pt-3 md:text-[13px] lg:text-sm xl:text-lg"
+                colSpan={2}>
+                {project.detail}
+              </td>
+            </tr>
+          </tbody>
         </table>
         <div
           className={` mt-8 mb-10 ${
-            project.type === "Data Visualitation" ? "hidden" : "flex"
+            project.type === "Data Visualization" ? "hidden" : "flex"
           }`}>
           {project.url ? (
             <a

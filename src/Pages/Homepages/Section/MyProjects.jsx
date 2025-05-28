@@ -6,7 +6,6 @@ import { Link } from "react-router";
 
 export const MyProjects = () => {
   const data = projects.slice(0, 4);
-  console.log(data);
   return (
     <div className="py-10 px-2 lg:px-26 lg:py-32 xl:py-16">
       <h2 className="text-center">

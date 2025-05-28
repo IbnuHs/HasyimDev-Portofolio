@@ -27,7 +27,7 @@ import newsApps6 from "/src/data/images/News Apps/News Apps6.png";
 import newsApps7 from "/src/data/images/News Apps/News Apps7.png";
 
 // Tracking Logistic
-import thumbnailTrackinglogistic from "/src/data/images/tracking logistic/kallatranslog_logo.jpeg";
+import thumbnailTrackinglogistic from "/src/data/images/tracking logistic/LogoKalla.png";
 import tracklog from "/src/data/images/tracking logistic/tracklog.png";
 import tracklog1 from "/src/data/images/tracking logistic/tracklog1.png";
 import tracklog2 from "/src/data/images/tracking logistic/tracklog2.png";
@@ -107,7 +107,7 @@ export const projects = [
   {
     id: 5,
     title: "Dashboard Customer Profiling",
-    type: "Data Visualitation",
+    type: "Data Visualization",
     techsStack: "KNIME, Power BI",
     urlImg: [
       customerprofiling1,
@@ -124,29 +124,32 @@ export const projects = [
   {
     id: 6,
     title: "Dashboard Customer Honda Care",
-    type: "Data Visualitation",
+    type: "Data Visualization",
     techsStack: "KNIME, Power BI",
     urlImg: "",
     thumbnail: "",
     url: "",
+    detail: `This project focuses on data processing and visualization of Honda Care service users in the Papua region. Using KNIME for data wrangling and transformation, and Power BI for interactive dashboards, the project aims to provide actionable insights on customer engagement, service frequency, and dealer performance. Raw data from multiple sources were cleaned, merged, and analyzed to track service trends, customer demographics, and usage behavior. The result is a set of informative visual reports that can assist regional decision-makers in improving service delivery, optimizing customer retention strategies, and identifying key growth opportunities within the Papua market.`,
   },
   {
     id: 7,
     title: "Automatic Spreadsheet Filling Tool - Dealer Sales Data",
-    type: "Data Visualitation",
+    type: "Data Visualization",
     techsStack: "Google App Script, Mailer, Spreadsheet",
     urlImg: "",
     thumbnail: "",
     url: "",
+    detail: `This project is an automation system developed to manage and distribute motorcycle sales data from dealers in the Papua region efficiently. Leveraging Google Apps Script, the system pulls structured sales data submitted by dealers, auto-fills it into a master Google Spreadsheet, and then transforms the information into a cleanly formatted HTML table using CSS. The resulting table is sent via automated email reports to stakeholders at regular intervals, ensuring timely and accurate data delivery. This tool improves operational workflows by reducing manual entry, minimizing errors, and enabling faster decision-making through automated, professional reporting.`,
   },
   {
     id: 8,
     title: "Automatic Spreadsheet Filling Tools - KPB Service Data",
-    type: "Data Visualitation",
+    type: "Data Visualization",
     techsStack: "Google App Script, Mailer, Spreadsheet",
     urlImg: "",
     thumbnail: "",
     url: "",
+    detail: `This project is an automation tool designed to streamline the process of inputting and reporting KPB service data from Honda dealers in the Papua region. Built using Google Apps Script, the tool automatically fills a centralized Google Spreadsheet with service data submitted by dealers. Once populated, the tool formats the data into a responsive HTML table styled with CSS, then sends it via email notifications to relevant stakeholders on a scheduled basis. This automation significantly reduces manual work, ensures consistent formatting, and enhances communication efficiency by delivering up-to-date service metrics directly to decision-makers' inboxes.`,
   },
 
   {

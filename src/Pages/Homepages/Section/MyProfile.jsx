@@ -1,5 +1,5 @@
 import React from "react";
-import mypict from "../../../assets/me.png";
+import mypict from "../../../assets/me1.png";
 
 export const MyProfile = () => {
   return (
@@ -7,7 +7,7 @@ export const MyProfile = () => {
       <img
         src={mypict}
         alt="Ibnu Hasyim Picture"
-        className="min-w-[80%] m-auto md:min-w-auto md:max-w-[40%] lg:w-full lg:max-w-[43%] xl:max-w-[500px] 2xl:max-w-[600px]"
+        className="min-w-[80%] m-auto md:min-w-auto md:max-w-[40%] lg:max-w-[340px] xl:max-w-[500px] 2xl:max-w-[550px]"
       />
       {/* <div className="h-[9px] w-[100px] absolute -right-18 rounded-[100%] shadow-[#E52020] shadow-background bg-[#e520208a] blur-2xl top-[80px] -z-10 md:-right-0 md:top-[42%] md:rounded-none md:w-[200px] lg:w-[500px] lg:-right-[0px] 2xl:top-[28%]"></div> */}
 

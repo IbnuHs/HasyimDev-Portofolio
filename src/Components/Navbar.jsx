@@ -1,17 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { IoClose, IoMenu } from "react-icons/io5";
 export const Navbar = () => {
   const [show, setShow] = useState(false);
   const menuref = useRef();
   const onShow = () => {
     setShow(true);
-    console.log(show);
   };
   const onClose = () => {
     setShow(false);
-    console.log(show);
   };
+  const location = useLocation();
+  useEffect(() => {
+    setShow(false);
+  }, [location]);
   useEffect(() => {
     const handleClickOutside = e => {
       if (show && menuref.current && !menuref.current.contains(e.target)) {
