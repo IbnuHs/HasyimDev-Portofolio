@@ -40,8 +40,7 @@ export const Modal = () => {
           </div>
           <div className="flex items-center justify-center mt-4">
             <a
-              href="/src/data/CV Ibnu Hasyim Surianto.pdf"
-              download
+              href="https://drive.google.com/file/d/1ONvXhrqpdNb-Vvbpx1_iSjSqh3hZu6QV/view?usp=sharing"
               className="border-2 font-semibold border-[#F72C5B] px-4 transition-all duration-100 py-1 rounded-md cursor-pointer hover:shadow-button hover:shadow-[#BF3131]">
               Download CV
             </a>
