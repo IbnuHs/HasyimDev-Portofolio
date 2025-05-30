@@ -1,5 +1,5 @@
 import dicodingpict from "/src/data/images/experience/dicoding.png";
-import kallaPict from "/src/data/images/experience/kalla.png";
+import kallaPict from "/src/data/images/experience/Kalla.png";
 import hondaLogo from "/src/data/images/experience/honda-logo-vector-honda-icon.jpg";
 
 export const experience = [
