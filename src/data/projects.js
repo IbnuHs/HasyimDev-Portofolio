@@ -35,7 +35,7 @@ import tracklog2 from "/src/data/images/tracking logistic/tracklog2.png";
 // Music apps
 import thumbnailmusicapps from "/src/data/images/music-apps/music-apps thumbnail.png";
 import musicapps1 from "/src/data/images/music-apps/music-apps1.png";
-import musicapps2 from "/src/data/images/music-apps/music-Apps2.png";
+import musicapps2 from "/src/data/images/music-apps/music-apps2.png";
 import musicapps3 from "/src/data/images/music-apps/music-apps3.png";
 
 // Customer profiling
