@@ -27,7 +27,7 @@ import newsApps6 from "/src/data/images/News Apps/News Apps6.png";
 import newsApps7 from "/src/data/images/News Apps/News Apps7.png";
 
 // Tracking Logistic
-import thumbnailTrackinglogistic from "/src/data/images/tracking logistic/LogoKalla.png";
+import thumbnailTrackinglogistic from "/src/data/images/tracking logistic/logokalla.png";
 import tracklog from "/src/data/images/tracking logistic/tracklog.png";
 import tracklog1 from "/src/data/images/tracking logistic/tracklog1.png";
 import tracklog2 from "/src/data/images/tracking logistic/tracklog2.png";
