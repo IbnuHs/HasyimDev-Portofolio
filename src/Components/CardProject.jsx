@@ -15,7 +15,7 @@ export const CardProject = props => {
           className={`w-full h-full ${
             props.urlImg ? "object-cover" : "objec-fill border rounded-xl"
           } ${
-            props.type === "Data Visualitation" && props.urlImg
+            props.type === "Data Visualization" && props.urlImg
               ? "object-scale-down bg-gray-400"
               : "object-contain"
           }`}

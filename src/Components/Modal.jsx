@@ -21,19 +21,29 @@ export const Modal = () => {
           </div>
           <div className="flex items-center justify-center mt-5 gap-5">
             <a
-              href=""
+              href="https://www.linkedin.com/in/ibnu-hasyim-surianto-277b84241/"
+              target="_blank"
               className="flex items-center gap-2 text-[18px] underline">
               <FaLinkedin className="text-[28px]" />
             </a>
             <a
-              href=""
+              href="mailto:ibnuhs30@gmail.com"
+              target="_blank"
               className="flex items-center border rounded-md p-[3px] box-content gap-2 text-[18px] underline">
               <BiLogoGmail className="text-[22px]" />
             </a>
             <a
-              href=""
+              href="https://github.com/IbnuHs"
               className="flex items-center gap-2 text-[18px] underline">
               <FaGithubSquare className="text-[30px]" />
+            </a>
+          </div>
+          <div className="flex items-center justify-center mt-4">
+            <a
+              href="/src/data/CV Ibnu Hasyim Surianto.pdf"
+              download
+              className="border-2 font-semibold border-[#F72C5B] px-4 transition-all duration-100 py-1 rounded-md cursor-pointer hover:shadow-button hover:shadow-[#BF3131]">
+              Download CV
             </a>
           </div>
         </div>
