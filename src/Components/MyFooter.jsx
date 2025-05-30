@@ -11,8 +11,8 @@ export const MyFooter = () => {
           HASYIM<span className="text-[#F72C5B] font-extrabold">DEV</span>
         </h5>
         <div className="flex flex-col gap-3 items-center md:gap-5 2xl:gap-6">
-          <h5 className="flex items-center gap-1 text-[12px] font-semibold md:text-sm lg:text-[15px] xl:text-[20px] 2xl:text-[22px]">
-            <FaLocationDot className="text-[12px]" />
+          <h5 className="flex items-center gap-1 text-[12px] font-semibold md:text-sm lg:text-[15px] xl:text-[20px] xl:gap-2 2xl:text-[22px]">
+            <FaLocationDot className="text-[12px] lg:text-[15px] xl:text-[20px] 2xl:text-[22px]" />
             Makassar, Indonesia
           </h5>
           <ol className="flex gap-2 lg:gap-3">
