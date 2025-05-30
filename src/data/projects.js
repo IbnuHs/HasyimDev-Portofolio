@@ -78,8 +78,7 @@ export const projects = [
     thumbnail: thumbnailLF,
     alert:
       "The backend service is currently unavailable. The application is running in frontend-only mode. Some features may not work properly until the backend is restored.",
-    detail: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus facere fugit rem error molestiae eveniet! Accusamus eos aspernatur, vel, sit labore laborum facilis accusantium nostrum ab, placeat perspiciatis expedita.
-      Voluptatum eos voluptatem ad nobis nihil hic blanditiis earum aliquid atque ea fuga, odio in dicta vel aspernatur exercitationem sed et minus, rem velit dolorum reprehenderit pariatur molestias dignissimos! Deserunt.`,
+    detail: `The Lost and Found application was developed specifically for the Faculty of Computer Science at Universitas Muslim Indonesia to help students, lecturers, and staff easily report and find lost or found items within the campus area. Users can create real-time reports by providing item descriptions and uploading photos, as well as browse through the latest posts to locate their belongings or help others. Built with modern web technologies, the app focuses on user-friendly experience and accessibility. This project aims to foster a more caring and collaborative academic environment where the campus community works together to safeguard personal belongings.`,
     url: "https://lost-and-found.pages.dev/",
   },
   {
