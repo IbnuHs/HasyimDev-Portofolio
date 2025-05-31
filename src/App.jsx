@@ -11,6 +11,7 @@ import { AboutMe } from "./Pages/AboutMePages.jsx/AboutMe";
 import { Modal } from "./Components/Modal";
 
 function App() {
+  console.log("Made By Ibnu Hasyim S");
   return (
     <div className="relative scroll-smooth">
       <div className="z-50 backdrop-filter min-h-screen bg-[#1A1A1A] backdrop-blur-lg ">
