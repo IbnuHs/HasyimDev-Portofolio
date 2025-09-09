@@ -59,6 +59,14 @@ import hondaCare from "/src/data/images/honda care/HondaCare.png";
 import hondaCare2 from "/src/data/images/honda care/HondaCare2.png";
 import hondaCare3 from "/src/data/images/honda care/HondaCare3.png";
 
+// Mamayo
+import mamayo1 from "/src/data/images/Mamayo/mamayo1.png";
+import mamayo2 from "/src/data/images/Mamayo/mamayo2.png";
+import mamayo3 from "/src/data/images/Mamayo/mamayo3.png";
+import mamayo4 from "/src/data/images/Mamayo/mamayo4.png";
+import mamayo5 from "/src/data/images/Mamayo/mamayo5.png";
+import mamayo6 from "/src/data/images/Mamayo/mamayo6.png";
+
 export const projects = [
   {
     id: 1,
@@ -176,5 +184,20 @@ export const projects = [
     url: "",
     detail:
       "A modern music player application based on Electron.js that allows users to read, play and manage local music files from the application directory. Designed with a simple yet interactive interface, the app utilizes HTML, CSS and JavaScript on the frontend and Node.js on the backend through the Electron architecture.",
+  },
+  {
+    id: 10,
+    title: "Mamayo",
+    type: "Full-Stack",
+    techsStack:
+      "ReactJs, TailwinCss, NodeJs, NestJs, Mysql, ReactChartJs2, Flowbite",
+    urlImg: [mamayo1, mamayo2, mamayo3, mamayo4, mamayo5, mamayo6],
+    thumbnail: mamayo1,
+    url: "",
+    alert:
+      "Preview link is not available as this is an internal company application",
+    detail: `This project is the development of a reminder application designed specifically for Honda customers, with the primary purpose of encouraging them to return for regular maintenance at authorized service centers. The application not only serves as a reminder system but also acts as a strategic tool to enhance customer loyalty while driving spare parts sales through increased service visits.
+
+    I was fully responsible for the entire development process, starting from concept design and system architecture, user interface design, to both backend and frontend implementation. After completing the development phase, I also managed the deployment of the application to the server, ensuring stable and optimal performance.`,
   },
 ];
