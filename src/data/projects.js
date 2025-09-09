@@ -124,33 +124,33 @@ export const projects = [
     thumbnail: thumbnailTrackinglogistic,
     detail: `This project is a freight tracking system developed for Kalla Translog expeditions. The system allows users to track the status and location of the goods they send through the Kalla Translog service in real-time. This project was developed during the Merdeka Campus Internship program at Kalla Group. In this project, I was responsible as a backend developer who focused on creating and developing a RESTful API to support the needs of the frontend team. The API I built was tasked with providing shipment tracking data, including information on shipment status and last location.`,
   },
-  {
-    id: 5,
-    title: "Dashboard Customer Profiling",
-    type: "Data Visualization",
-    techsStack: "KNIME, Power BI",
-    urlImg: [
-      customerprofiling1,
-      customerprofiling2,
-      customerprofiling3,
-      customerprofiling4,
-      customerprofiling5,
-      customerprofiling6,
-    ],
-    thumbnail: customerprofiling3,
-    url: "",
-    detail: `This project involves the development of an interactive dashboard showcasing sales data of Honda motorcycles in the Papua region over several years. The raw data was first processed using KNIME for cleaning, transformation, and aggregation. Afterward, the processed data was visualized using Power BI. The dashboard is designed to provide strategic insights into sales trends, regional performance, and growth patterns over time, supporting better and more informed business decision-making.`,
-  },
-  {
-    id: 6,
-    title: "Dashboard Customer Honda Care",
-    type: "Data Visualization",
-    techsStack: "KNIME, Power BI",
-    urlImg: [hondaCare, hondaCare2, hondaCare3],
-    thumbnail: hondaCare,
-    url: "",
-    detail: `This project focuses on data processing and visualization of Honda Care service users in the Papua region. Using KNIME for data wrangling and transformation, and Power BI for interactive dashboards, the project aims to provide actionable insights on customer engagement, service frequency, and dealer performance. Raw data from multiple sources were cleaned, merged, and analyzed to track service trends, customer demographics, and usage behavior. The result is a set of informative visual reports that can assist regional decision-makers in improving service delivery, optimizing customer retention strategies, and identifying key growth opportunities within the Papua market.`,
-  },
+  // {
+  //   id: 5,
+  //   title: "Dashboard Customer Profiling",
+  //   type: "Data Visualization",
+  //   techsStack: "KNIME, Power BI",
+  //   urlImg: [
+  //     customerprofiling1,
+  //     customerprofiling2,
+  //     customerprofiling3,
+  //     customerprofiling4,
+  //     customerprofiling5,
+  //     customerprofiling6,
+  //   ],
+  //   thumbnail: customerprofiling3,
+  //   url: "",
+  //   detail: `This project involves the development of an interactive dashboard showcasing sales data of Honda motorcycles in the Papua region over several years. The raw data was first processed using KNIME for cleaning, transformation, and aggregation. Afterward, the processed data was visualized using Power BI. The dashboard is designed to provide strategic insights into sales trends, regional performance, and growth patterns over time, supporting better and more informed business decision-making.`,
+  // },
+  // {
+  //   id: 6,
+  //   title: "Dashboard Customer Honda Care",
+  //   type: "Data Visualization",
+  //   techsStack: "KNIME, Power BI",
+  //   urlImg: [hondaCare, hondaCare2, hondaCare3],
+  //   thumbnail: hondaCare,
+  //   url: "",
+  //   detail: `This project focuses on data processing and visualization of Honda Care service users in the Papua region. Using KNIME for data wrangling and transformation, and Power BI for interactive dashboards, the project aims to provide actionable insights on customer engagement, service frequency, and dealer performance. Raw data from multiple sources were cleaned, merged, and analyzed to track service trends, customer demographics, and usage behavior. The result is a set of informative visual reports that can assist regional decision-makers in improving service delivery, optimizing customer retention strategies, and identifying key growth opportunities within the Papua market.`,
+  // },
   {
     id: 7,
     title: "Automatic Spreadsheet Filling Tool - Dealer Sales Data",
@@ -185,19 +185,19 @@ export const projects = [
     detail:
       "A modern music player application based on Electron.js that allows users to read, play and manage local music files from the application directory. Designed with a simple yet interactive interface, the app utilizes HTML, CSS and JavaScript on the frontend and Node.js on the backend through the Electron architecture.",
   },
-  {
-    id: 10,
-    title: "Mamayo",
-    type: "Full-Stack",
-    techsStack:
-      "ReactJs, TailwinCss, NodeJs, NestJs, Mysql, ReactChartJs2, Flowbite",
-    urlImg: [mamayo1, mamayo2, mamayo3, mamayo4, mamayo5, mamayo6],
-    thumbnail: mamayo1,
-    url: "",
-    alert:
-      "Preview link is not available as this is an internal company application",
-    detail: `This project is the development of a reminder application designed specifically for Honda customers, with the primary purpose of encouraging them to return for regular maintenance at authorized service centers. The application not only serves as a reminder system but also acts as a strategic tool to enhance customer loyalty while driving spare parts sales through increased service visits.
+  // {
+  //   id: 10,
+  //   title: "Mamayo",
+  //   type: "Full-Stack",
+  //   techsStack:
+  //     "ReactJs, TailwinCss, NodeJs, NestJs, Mysql, ReactChartJs2, Flowbite",
+  //   urlImg: [mamayo1, mamayo2, mamayo3, mamayo4, mamayo5, mamayo6],
+  //   thumbnail: mamayo1,
+  //   url: "",
+  //   alert:
+  //     "Preview link is not available as this is an internal company application",
+  //   detail: `This project is the development of a reminder application designed specifically for Honda customers, with the primary purpose of encouraging them to return for regular maintenance at authorized service centers. The application not only serves as a reminder system but also acts as a strategic tool to enhance customer loyalty while driving spare parts sales through increased service visits.
 
-    I was fully responsible for the entire development process, starting from concept design and system architecture, user interface design, to both backend and frontend implementation. After completing the development phase, I also managed the deployment of the application to the server, ensuring stable and optimal performance.`,
-  },
+  //   I was fully responsible for the entire development process, starting from concept design and system architecture, user interface design, to both backend and frontend implementation. After completing the development phase, I also managed the deployment of the application to the server, ensuring stable and optimal performance.`,
+  // },
 ];
